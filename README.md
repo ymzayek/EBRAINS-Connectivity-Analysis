@@ -4,8 +4,15 @@ Connectivity analysis pipeline using [EBRAINS](https://ebrains.eu/) and [Nilearn
 
 ## Requirements
 
-Python >= 3.6
-Brainscapes == 0.0.8.7.1
+- Python >= 3.6
+- Nilearn >= 0.7.1
+- Brainscapes >= 0.0.8.7.1
+
+Install Nilearn from [Pypi](https://pypi.org/project/nilearn):
+
+```
+$ pip install nilearn
+```
 
 Install brainscapes from [Pypi](https://pypi.org/project/brainscapes/):
 
