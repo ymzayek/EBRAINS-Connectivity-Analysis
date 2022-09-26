@@ -6,7 +6,7 @@ This repository holds code to demo how to run a connectivity analysis pipeline u
 
 - Python >= 3.6
 - Nilearn >= 0.8.0
-- Siibra >= 0.2a51
+- Siibra >= 0.3a25
 
 ### Nilearn
 
@@ -38,8 +38,8 @@ The sources are available on Github [here](https://github.com/FZJ-INM1-BDA/siibr
 
 ## Quick start
 
-Make sure you have the requirements installed and run the following [notebook](https://github.com/NicolasGensollen/EBRAINS-Connectivity-Analysis/blob/main/Notebooks/connectivity-analysis-pieline.ipynb).
+Make sure you have the requirements installed and run the following [notebook](https://github.com/ymzayek/EBRAINS-Connectivity-Analysis/blob/main/Notebooks/connectivity-analysis-pipeline.ipynb).
 
 ## Contacts
 
-For any question you can contact Nicolas Gensollen at *nicolas.gensollen@inria.fr*.
+For any question you can contact Yasmin Mzayek at *yasmin.mzayek@inria.fr*.
