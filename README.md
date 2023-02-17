@@ -1,12 +1,12 @@
 # EBRAINS Connectivity Analysis
 
-This repository holds code to demo how to run a connectivity analysis pipeline using [EBRAINS](https://ebrains.eu/) and [Nilearn](http://nilearn.github.io/index.html).
+This repository holds code to demo how to run a connectivity analysis pipeline with [EBRAINS](https://ebrains.eu/) atlases using [siibra-python](https://siibra-python.readthedocs.io) and [Nilearn](http://nilearn.github.io/index.html).
 
 ## Requirements
 
 - Python >= 3.6
 - Nilearn >= 0.8.0
-- Siibra >= 0.3a25
+- Siibra >= 0.4a33
 
 ### Nilearn
 
@@ -24,7 +24,7 @@ The sources are available on GitHub [here](https://github.com/nilearn/nilearn).
 
 ### Siibra
 
-Siibra is a Python client for interacting with “multilevel” brain atlases, which combine multiple brain parcellations, reference coordinate spaces and modalities. 
+Siibra is a Python client for interacting with brain atlases defined across multiple scales and modalities. 
 
 Install siibra from [Pypi](https://pypi.org/project/siibra/):
 
