@@ -1,19 +1,34 @@
-from nilearn.datasets.utils import _get_dataset_dir, _fetch_files
+from nilearn.datasets.utils import _fetch_files
+import zipfile
+from pathlib import Path
+import glob
+
+def download_data():
+    # download zip file from OSF
+    data_exists = glob.glob("**/sub-01", recursive=True)
+    if data_exists:
+        return print(f"Data is already downloaded; check paths {data_exists}")
+
+    data_path = Path('data')
+    osfID = 'nxwsq'
+    filename = 'sub_01.zip'
+    url = f'https://osf.io/{osfID}/download'
+    _fetch_files(
+        data_path, [(
+            filename,
+            url,
+            {'move': filename}
+        )]
+    )
+
+    # extract data
+    with zipfile.ZipFile(data_path / filename, 'r') as zip_ref:
+        zip_ref.extractall(data_path)
+    
+    
+    # delete zip file
+    Path.unlink(data_path / filename)
 
 
-def download_ibc_3mm(sub, ses, img_id, confound_id, dir):
-    data_dir = _get_dataset_dir(f'3mm/{sub}/{ses}', data_dir='data')
-    url = f'https://osf.io/{img_id}/download'
-    _fetch_files(
-        data_dir,
-        [(f'wrdc{sub}_{ses}_task-RestingState_dir-{dir}_bold.nii.gz',
-          url,
-          {'move': f'wrdc{sub}_{ses}_task-RestingState_dir-ap_bold.nii.gz'})]
-    )
-    url = f'https://osf.io/{confound_id}/download'
-    _fetch_files(
-        data_dir,
-        [(f'dir-{dir}_confounds_timeseries.tsv',
-          url,
-          {'move': f'dir-{dir}_confounds_timeseries.tsv'})]
-    )
+if __name__ == "__main__":
+    download_data()
