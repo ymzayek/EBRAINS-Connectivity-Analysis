@@ -4,7 +4,7 @@ This repository holds code to demo how to run a connectivity analysis pipeline w
 
 > **Note**
 > 
-> You can [run this notebook on EBRAINS](https://lab.ebrains.eu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fymzayek%2FEBRAINS-Connectivity-Analysis.git&urlpath=tree%2FEBRAINS-Connectivity-Analysis.git%2FNotebooks/connectivity-analysis-pipeline.ipynb&branch=siibra-v0.4)
+> You can [run this notebook on EBRAINS](https://lab.ebrains.eu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fymzayek%2FEBRAINS-Connectivity-Analysis&urlpath=lab%2Ftree%2FEBRAINS-Connectivity-Analysis%2F)
 
 ## Requirements
 
