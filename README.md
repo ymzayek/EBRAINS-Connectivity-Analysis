@@ -8,7 +8,7 @@ This repository holds code to demo how to run a connectivity analysis pipeline w
 
 ## Requirements
 
-- Python >= 3.6
+- Python >= 3.7
 - Nilearn >= 0.8.0
 - Siibra >= 0.4a33
 
