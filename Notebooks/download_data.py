@@ -10,7 +10,7 @@ def download_data():
         return print(f"Data is already downloaded; check paths {data_exists}")
 
     data_path = Path('data')
-    osfID = '9kd5s'
+    osfID = 'hqfxm'
     filename = 'sub_04.zip'
     url = f'https://osf.io/{osfID}/download'
     _fetch_files(
