@@ -1,7 +1,9 @@
-from nilearn.datasets.utils import _fetch_files
-import zipfile
-from pathlib import Path
 import glob
+from pathlib import Path
+import zipfile
+
+from nilearn.datasets import utils
+
 
 def download_data():
     # download zip file from OSF
@@ -10,10 +12,10 @@ def download_data():
         return print(f"Data is already downloaded; check paths {data_exists}")
 
     data_path = Path('data')
-    osfID = 'd9658'
+    osf_id = 'd9658'
     filename = 'sub_04.zip'
-    url = f'https://osf.io/{osfID}/download'
-    _fetch_files(
+    url = f'https://osf.io/{osf_id}/download'
+    utils._fetch_files(
         data_path, [(
             filename,
             url,
@@ -24,8 +26,7 @@ def download_data():
     # extract data
     with zipfile.ZipFile(data_path / filename, 'r') as zip_ref:
         zip_ref.extractall(data_path)
-    
-    
+
     # delete zip file
     Path.unlink(data_path / filename)
 
