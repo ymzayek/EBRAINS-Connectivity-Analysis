@@ -11,7 +11,7 @@ Otherwise see instructions below for running the notebook locally.
 ## Requirements
 
 - Python
-- Notebook server to edit and run the notebook interactively
+- [Jupyter notebook](https://jupyter-notebook.readthedocs.io/en/4.x/notebook.html) to edit and run the notebook interactively
 
 ### Dependencies
 
