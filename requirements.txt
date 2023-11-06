@@ -1,0 +1,3 @@
+nilearn>=0.9.0
+siibra>=0.4a76
+matplotlib
