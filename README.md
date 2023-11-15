@@ -16,7 +16,7 @@ Otherwise see instructions below for running the notebook locally.
 ### Dependencies
 
 - nilearn >= 0.9.0
-- siibra >= 0.4a76
+- siibra == 0.4a77
 - matplotlib
 
 You can simply run ```pip install -r requirements.txt``` in a python virtual
